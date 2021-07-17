@@ -1,3 +1,4 @@
 npm init
 npm i --save-dev rollup rollup-plugin-peer-deps-external @rollup/plugin-node-resolve @rollup/plugin-babel @babel/core @babel/preset-env @babel/preset-react @babel/preset-typescript @babel/plugin-proposal-class-properties typescript tslib rimraf
 npm run tsc -- --init
+npm i --save-dev react react-dom @types/react
