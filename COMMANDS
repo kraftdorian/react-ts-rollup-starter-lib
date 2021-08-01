@@ -3,3 +3,5 @@ npm i --save-dev rollup rollup-plugin-peer-deps-external @rollup/plugin-node-res
 npm run tsc -- --init
 npm i --save-dev react react-dom @types/react
 npx sb init
+npm i --save-dev jest ts-jest @types/jest @testing-library/react
+jest --init

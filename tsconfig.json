@@ -14,13 +14,17 @@
       "es5",
       "dom"
     ],
-    "types": [],
+    "types": ["jest"],
     "allowJs": false,
     "jsx": "react",
     "declaration": true,
     "sourceMap": true,
     "outDir": "dist",
     "rootDir": "src",
+    "baseUrl": "src",
+    "paths": {
+      "test-setup": ["test-setup"]
+    },
     "removeComments": true,
     "strict": true,
     "moduleResolution": "node",
