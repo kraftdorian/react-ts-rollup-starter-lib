@@ -22,8 +22,9 @@ export default {
     resolve(),
     babel({
       extensions: EXTENSIONS,
-      babelHelpers: "inline",
-      include: EXTENSIONS.map(ext => `src/**/*${ext}`)
+      babelHelpers: "runtime",
+      include: EXTENSIONS.map(ext => `src/**/*${ext}`),
+      plugins: ["@babel/plugin-transform-runtime"]
     })
   ],
   external: EXTERNAL
