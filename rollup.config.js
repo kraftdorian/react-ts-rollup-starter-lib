@@ -15,7 +15,8 @@ export default {
     dir: "dist",
     sourcemap: true,
     format: "esm",
-    preserveModules: true
+    preserveModules: true,
+    preserveModulesRoot: "src"
   },
   plugins: [
     peerDepsExternal(),
