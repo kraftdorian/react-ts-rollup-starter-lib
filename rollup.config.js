@@ -1,10 +1,7 @@
-import babel from "@rollup/plugin-babel";
 import resolve from "@rollup/plugin-node-resolve";
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import pkg from "./package.json";
-
-// Array of extensions to be handled by babel
-const EXTENSIONS = [".ts", ".tsx"];
+import typescript from 'rollup-plugin-typescript2';
 
 // Excluded dependencies
 const EXTERNAL = Object.keys(pkg.devDependencies);
@@ -15,18 +12,14 @@ export default {
     dir: "dist",
     sourcemap: true,
     format: "esm",
+    exports: "named",
     preserveModules: true,
     preserveModulesRoot: "src"
   },
   plugins: [
     peerDepsExternal(),
     resolve(),
-    babel({
-      extensions: EXTENSIONS,
-      babelHelpers: "runtime",
-      include: EXTENSIONS.map(ext => `src/**/*${ext}`),
-      plugins: ["@babel/plugin-transform-runtime"]
-    })
+    typescript()
   ],
   external: EXTERNAL
 };
