@@ -5,7 +5,10 @@
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "src/**/*.stories.tsx",
+    "src/**/*.test.tsx",
+    "src/test-setup.tsx"
   ],
   "compilerOptions": {
     "target": "es5",
