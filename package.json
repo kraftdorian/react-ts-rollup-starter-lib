@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "browser": "dist/index.js",
+  "module": "dist/index.esm.js",
   "files": [
     "dist/**/*"
   ],
