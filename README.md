@@ -3,6 +3,7 @@
 1. [React.js v17](https://reactjs.org/)
 2. [TypeScript](https://www.typescriptlang.org/)
 3. [Rollup.js](https://rollupjs.org/)
+4. [Storybook](https://storybook.js.org/)
 
 ## Notes
 This is a repository created for learning purposes,
